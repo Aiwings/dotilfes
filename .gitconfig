@@ -1,0 +1,19 @@
+[user]
+	name = Guillaume Roux
+	email = roux.gensou@gmail.com
+[core]
+	editor = vim
+	pager =  delta
+
+[commit]
+	template = ~/.gitmessage
+
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	light =  false
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved =  default
