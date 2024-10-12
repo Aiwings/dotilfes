@@ -1,0 +1,5 @@
+alias prime="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
+alias aoe2="prime steam steam://rungameid/813780"
+alias keepassxc-cli="flatpak run --command=keepassxc-cli org.keepassxc.KeePassXC"
+alias protontricks="flatpak run com.github.Matoking.protontricks"
+
