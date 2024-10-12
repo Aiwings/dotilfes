@@ -1,0 +1,114 @@
+@import url("./colors.css");
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'Oxygen Sans';
+    font-size: 1.01em;
+    min-height: 0;
+}
+
+window#waybar {
+    opacity: 0.9;
+    background: @background-darker;
+    color: @foreground;
+    border-bottom: 2px solid @background;
+    padding: 2px 0;
+}
+
+#workspaces button {
+    color: @foreground;
+    padding:0 16px;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#custom-power:hover,
+#idle_inhibitor:hover,
+#idle_inhibitor.activated,
+#workspaces button:hover,
+#workspaces button.visible {
+    background-image: linear-gradient(0deg, @purple, @selection);
+}
+
+#workspaces button.urgent {
+    background-image: linear-gradient(0deg, @red, @background-darker);
+}
+
+#battery.warning {
+   color: @orange;   
+}
+#battery.critical {
+   color: @red;   
+}
+
+#battery.good {
+   color: @green;   
+}
+
+#network,
+#language,
+#custom-power,
+#idle_inhibitor, 
+#tray,
+#custom-weather,
+#clock {
+ padding: 4px 25px;
+}
+
+#network,
+#language,
+#battery,
+#custom-weather,
+#pulseaudio,
+#clock,
+#custom-power,
+#idle_inhibitor,
+#tray,
+#workspaces { 
+  background-image: linear-gradient(0deg, @background, @selection);
+}
+
+#custom-weather,
+#clock,
+#language,
+#workspaces button,
+#custom-power,
+#idle_inhibitor,
+#tray,
+#workspaces {
+  border-radius: 25px;
+}
+
+#pulseaudio {
+ border-top-left-radius: 25px;
+ border-bottom-left-radius: 25px;
+ padding-left: 25px;
+}
+
+#idle_inhibitor,
+#battery { 
+  margin-right:20px;
+}
+#custom-power,
+#custom-weather,
+#pulseaudio {
+  margin-left: 20px;
+}
+
+#battery {
+ border-top-right-radius: 25px;
+ border-bottom-right-radius: 25px;
+ padding-right: 25px;
+}
+
+.modules-center, 
+.modules-right, 
+.modules-left {
+  background: @background-darker;
+  margin: 10px 20px; 
+  opacity: 0.9;
+}
+
